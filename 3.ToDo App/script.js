@@ -114,8 +114,9 @@ function populateUI(){
     // console.log(tasks1);
     // console.log(localStorage.keys());
     for ( var i = 0, len = localStorage.length; i < len; ++i ) {
-        
-        tasks = [...tasks,localStorage.getItem( localStorage.key(i)).split(',')]
+        if(localStorage.key(i).includes('task')){
+            tasks = [...tasks,localStorage.getItem( localStorage.key(i)).split(',')]
+        }
       }
       tasks.forEach(displayNewTask);
       changeNumTasks();
