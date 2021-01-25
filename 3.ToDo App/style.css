@@ -89,7 +89,7 @@ body{
 }
 .entries div p{
     font-size: 25px;
-    margin-left:10px;
+    margin-right:5px;
 }
 .entries div p:nth-child(1){
     font-size: 45px;
