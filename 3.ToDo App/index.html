@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ToDo App - Garry Ghotra</title>
+</head>
+<body>
+    <h1>ToDo App</h1>
+
+    <div class="container">
+        <div class="addTask pointer" id="addTaskBtn" onClick="addTask()">
+            <i class="fa fa-plus-circle"></i>Add A Task
+        </div>
+        <div class="taskDetails" id="taskDetails">
+            <i class="fa fa-close pointer" onClick="addTask()""></i>
+            <form action="" id="form">
+                <div class="inputs">
+                    <label>Task Name:</label>
+                    <input type="text" name="nameOfTask" placeholder="Name of Task" required>
+                </div>
+                <div class="inputs">
+                    <label>Date of Task:</label>
+                    <input type="date" name="dateOfTask">
+                </div>
+                <div class="inputs">
+                    <label>Set Time:</label>
+                    <input type="time" name="timeOfTask" id="">
+                </div>
+                <div class="inputs">
+                    <label>Write Something about the task:</label>
+                    <input type="text" name="description" placeholder="Brief Description">
+                </div>
+                
+                <button type="submit" class="pointer" id="addNewTask">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="entries" id="entries">
+        <p class="displayText"> You have <span>0</span> Tasks currently</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
