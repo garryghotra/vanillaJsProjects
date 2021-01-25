@@ -85,9 +85,11 @@ body{
     color: black;
     border-radius: 10px;
     margin-top: 20px;
+    flex-wrap:wrap;
 }
 .entries div p{
     font-size: 25px;
+    margin-left:10px;
 }
 .entries div p:nth-child(1){
     font-size: 45px;
